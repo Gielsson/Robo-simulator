@@ -22,6 +22,6 @@ public class MovimentoInvalidoException extends Exception {
      * @param msg the detail message.
      */
     public MovimentoInvalidoException(String msg) {
-        super(msg);aaa
+        super(msg);
     }
 }
