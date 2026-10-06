@@ -2,7 +2,6 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Exception.java to edit this template
  */
-
 /**
  *
  * @author nitue
@@ -23,6 +22,6 @@ public class MovimentoInvalidoException extends Exception {
      * @param msg the detail message.
      */
     public MovimentoInvalidoException(String msg) {
-        super(msg);
+        super(msg);aaa
     }
 }
