@@ -222,8 +222,8 @@ src/
 
 | Integrante | Responsabilidades |
 |---|---|
-| **Pessoa 1** — *[seu colega aqui]* | Exceção, classe `Robo`, regras de movimento, `Main1` e `Main2` |
-| **Pessoa 2** — *[seu nome aqui]* | `RoboInteligente`, obstáculos (`Bomba`, `Rocha`), `Tabuleiro`, `Main3`, `Main4` e interface gráfica |
+| **Pessoa 1** — *Kaik Anderson* | Exceção, classe `Robo`, regras de movimento, `Main1` e `Main2` |
+| **Pessoa 2** — *Gielsson Martins* | `RoboInteligente`, obstáculos (`Bomba`, `Rocha`), `Tabuleiro`, `Main3`, `Main4` e interface gráfica |
 
 ---
 
