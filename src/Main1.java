@@ -1,3 +1,5 @@
+
+package robosimulador;
 import java.util.Scanner;
  
 /**

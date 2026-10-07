@@ -1,12 +1,17 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+package robosimulador;
 
-/**
- *
- * @author nitue
- */
-public class Bomba {
-    
+/** Bomba: o robô que encostar explode e a bomba some do tabuleiro. */
+public class Bomba extends Obstaculo {
+
+    public Bomba(int id, int x, int y) {
+        super(id, x, y, "B");
+    }
+
+    @Override
+    public void bater(Robo robo) {
+        robo.explodir();
+        desativar(); // a bomba também desaparece
+        System.out.println("BOOM! O robô " + robo.getCor() + " explodiu na bomba "
+                + getId() + " em (" + getX() + ", " + getY() + ").");
+    }
 }

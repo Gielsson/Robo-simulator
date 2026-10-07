@@ -1,3 +1,4 @@
+package robosimulador;
 /**
  * Representa o robô (personagem) que se move no eixo cartesiano (x, y).
  *
@@ -23,6 +24,9 @@ public class Robo {
     // Contadores usados nas Mains para o relatório final.
     private int movimentosValidos;
     private int movimentosInvalidos;
+    
+    // Flag que diz se o robô foi explodido ou não.
+    private boolean explodido;
  
     
      // Cria um robô na posição (0,0).   
@@ -68,6 +72,14 @@ public class Robo {
         return movimentosInvalidos;
     }
  
+    public void explodir() {
+        explodido = true;
+    }
+
+    public boolean isExplodido() {
+        return explodido;
+    }
+    
     // Define a posição x. Não aceita valores fora da área (inclusive negativos). 
     public void setX(int x) {
         if (!dentroDaArea(x)) {
@@ -203,4 +215,6 @@ public class Robo {
     private boolean dentroDaArea(int valor) {
         return valor >= 0 && valor < TAMANHO_AREA;
     }
+
+
 }
