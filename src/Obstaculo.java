@@ -2,12 +2,11 @@ package robosimulador;
 
 
 
-/**
- * Classe abstrata: representa qualquer obstáculo do tabuleiro.
- * Cada tipo de obstáculo decide o que acontece quando o robô bate nele.
- */
+//Classe abstrata:define regras a qualquer obstáculo do tabuleiro.
+ // Cada tipo de obstáculo decide o que acontece quando o robô bate nele.
+ 
 public abstract class Obstaculo {
-
+//atributos
     private int id;
     private int x;
     private int y;
@@ -18,12 +17,13 @@ public abstract class Obstaculo {
         this.id = id;
         this.x = x;
         this.y = y;
-        this.simbolo = simbolo;
+        this.simbolo = simbolo; //guarda a letra
         this.ativo = true;
     }
 
     /** O que acontece quando o robô encosta no obstáculo. */
     public abstract void bater(Robo robo);
+    //obriga qualquer classe filha a decidir o que acontece quando o robo bate nela
 
     public int getId() {
         return id;
@@ -47,6 +47,6 @@ public abstract class Obstaculo {
 
     /** Tira o obstáculo do tabuleiro. */
     public void desativar() {
-        ativo = false;
+        ativo = false; //diz ao jogo que ele n precisa ser mais desenhado no tabuleiro
     }
 }
