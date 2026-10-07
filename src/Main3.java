@@ -41,7 +41,7 @@ public class Main3 {
                     System.out.println("ERRO (" + robos[i].getCor() + "): " + e.getMessage());
                 }
                 Tabuleiro.exibir(robos, xAlimento, yAlimento);
-                Tabuleiro.pausar(500);
+                Tabuleiro.pausar(500); //pausa meio segundp
 
                 if (robos[i].encontrouAlimento(xAlimento, yAlimento)) {
                     achou[i] = true;
